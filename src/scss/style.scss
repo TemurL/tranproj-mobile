@@ -1,5 +1,4 @@
 @import 'fonts.scss';
-
 footer .signup button, .get-in-touch button, .main-container .capab .head .text-btn button {
   height: 40px;
   border: none;
@@ -10,6 +9,9 @@ footer .signup button, .get-in-touch button, .main-container .capab .head .text-
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+}
+.menu-btn {
+  display: none;
 }
 footer .signup button:hover, .get-in-touch button:hover, .main-container .capab .head .text-btn button:hover {
   background-color: #00627a;
@@ -138,9 +140,7 @@ header ul li {
   display: -ms-flexbox;
   display: flex;
   gap: 77px;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: center;
   margin-top: 75px;
 }
 .main-container .story .story-content * {
@@ -190,7 +190,6 @@ header ul li {
   background-image: url(../img/Bitmapwebuild.png);
 }
 .main-container .capab .head {
-  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,6 +213,7 @@ header ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
 }
 .main-container .capab .head .text-btn p {
   font-size: 11px;
@@ -294,6 +294,7 @@ footer .links .footer-container {
   display: flex;
   width: 940px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 footer .links .footer-container > * {
   margin-right: 50px;
@@ -338,3 +339,5 @@ footer .copyright {
 footer .copyright p {
   margin: 0;
 }
+
+@import 'media.scss';
