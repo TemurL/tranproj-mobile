@@ -7,6 +7,10 @@ $screenGap: 2rem;
         justify-content: space-around;
     }
 
+    .hello-section {
+        padding-inline: $screenGap;
+    }
+
     .main-container {
         padding-inline: $screenGap;
 
@@ -59,6 +63,9 @@ $screenGap: 2rem;
 @media screen and (max-width: 600px) {
     nav a {
         display: none;
+        &#a-menu {
+            display: block;
+        }
     }
     #menu-btn {
         display: block;

@@ -91,6 +91,7 @@ header {
   position: sticky;
   top: 0;
   background-color: #fff;
+  z-index: 3;
 }
 header ul {
   list-style: none;
@@ -339,5 +340,31 @@ footer .copyright {
 footer .copyright p {
   margin: 0;
 }
+
+
+.mobile-menu {
+  width: 100vw;
+  background-color: #fff;
+  padding-block: 2rem;
+  border-bottom: 4px solid grey;
+  transition: 1s;
+  z-index: 2;
+  position: fixed;
+  top: -540px;
+  ul {
+    list-style: none;
+    padding: 0 80px 0 0;
+    text-align: end;
+    a {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      font-weight: 900;
+      font-size: 25px;
+      margin-block: 50px;
+    }
+  }
+}
+
 
 @import 'media.scss';
